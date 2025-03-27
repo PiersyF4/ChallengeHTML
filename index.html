@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+
+<style>
+    #header {
+        top: 10px;
+        width: 100%;
+        text-align: center;
+        border-radius: 10%;
+    }
+
+    body {
+        font-family: 'Times New Roman', sans-serif;
+        background-color: #c2d1ff;
+    }
+
+    #link {
+        color: magenta;
+        font-weight: bold;
+    }
+
+    #link:hover {
+        color: mintcream;
+    }
+
+    #link:after {
+            color: red;
+        }
+
+    table {
+        width: 40%;
+        border-collapse: collapse;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: lightgrey;
+        color: black;
+        font-weight: bold;
+    }
+
+    tr {
+        background-color: #f4f4f4;
+        color: black;
+        font-weight: bold;
+    }
+
+    tr:hover {
+            background-color: darkgrey;
+        }
+
+    #foto {
+        border-radius: 10%;
+        border: 2px solid purple;
+    }
+
+    #tktk, #ig, #yt, #git {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 2px solid purple;
+    }
+
+    #footer {
+        position: fixed;
+        bottom: 10px;
+        width: 100%;
+        text-align: center;
+        border-radius: 10%;
+    }
+
+    /*
+    EPILEPSY WARNING
+    @keyframes fadein {
+        0% {
+            background-color: rgb(255,0,0,0.5);
+        }
+
+        33% {
+            background-color: rgb(0,255,0,0.5);
+        }
+
+        66% {
+            background-color: rgb(0,0,255,0.5);
+        }
+
+        100% {
+            background-color: rgb(255,0,0,0.5);
+        }
+    }
+
+    body {
+        animation: fadein 15s infinite alternate;
+
+    }
+    */
+
+</style>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head id="head">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Mio Blog Personale</title>
+    <link rel="icon" type="image/x-icon" href=".\imgs\favicon.ico" />
+</head>
+
+<body>
+
+    <header id="header">
+        <h1>Benvenuti nel mio blog per Epicode!</h1>
+    </header>
+
+    <main>
+
+        <!-- Chi Sono -->
+        <section id="about">
+            <h2>Chi Sono</h2>
+            <img id="foto" src=".\imgs\intutato.jpg" style="width:200px;height:auto;">
+            <p>
+                Mi chiamo Matteo Piersanti, aka Piersy, ho 22 anni e sono un appassionato di musica, videogiochi e corse.<br>
+                Nel tempo libero, che ormai non c'è quasi più, vado in moto<br>
+                Sono un grande appassionato di tecnologia e mi piace sperimentare nuove cose.<br>
+            </p>
+
+            <p>Cosa so suonare? (più o meno bene)</p>
+            <ul id="listMusic">
+                <li>Chitarra, sia acustica che elettrica</li>
+                <li>Basso</li>
+                <li>Tastiera</li>
+                <li style="width:0%" onclick="document.getElementById('sound').play()">Citofono(cliccami)</li>
+            </ul>
+            <audio id="sound" src="./imgs/citofono.wav"></audio>
+
+            <p>Quali sono i miei videogiochi preferiti? Ce ne sono troppi.. ma eccone alcuni</p>
+            <ul>
+                <li><a id="link" href="https://store.steampowered.com/app/244210/Assetto_Corsa/" target="_blank"> Assetto Corsa </a></li>
+                <li><a id="link" href="https://store.steampowered.com/app/1388880/Doki_Doki_Literature_Club_Plus/" target="_blank"> Doki Doki Literature Club </a></li>
+                <li><a id="link" href="https://store.steampowered.com/app/1238840/Battlefield_1/" target="_blank"> Battlefield </a></li>
+                <li><a id="link" href="https://store.steampowered.com/app/1313140/Cult_of_the_Lamb/" target="_blank"> Cult of the Lamb </a></li>
+                <li><a id="link" href="https://store.steampowered.com/app/394360/Hearts_of_Iron_IV/" target="_blank"> Hearts of Iron IV </a></li>
+            </ul>
+        </section>
+        <br />
+
+        <!-- Esperienze Scolastiche/Lavorative -->
+        <section id="xp">
+            <h2>Esperienze scolastiche/lavorative</h2>
+            <article>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Periodo</th>
+                            <th>Esperienza</th>
+                            <th>Qualifica</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2016-2022</td>
+                            <td>Scuola IIS</td>
+                            <td>Diploma SIA</td>
+                        </tr>
+                        <tr>
+                            <td>2022-attuale</td>
+                            <td>Junior Fullstack Developer</td>
+                            <td>Dipendente</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+        <br />
+
+    </main>
+
+    <!-- Footer Contatti -->
+    <footer id="footer">
+        <section id="contact">
+            <h2>Contatti</h2>
+            <p>
+                Se ci tieni ad avere il mio numero, eccolo: +39 366 936 6329<br><br>
+                <a href="https://www.instagram.com/piersy.no/" target="_blank"><img id="ig" src=".\imgs\ig.png" /></a>
+                <a href="https://www.youtube.com/@PiersyF4" target="_blank"><img id="yt" src=".\imgs\yt.png" /></a>
+                <a href="https://www.tiktok.com/@piersyno" target="_blank"><img id="tktk" src=".\imgs\tiktok.png" /></a>
+                <a href="https://github.com/PiersyF4" target="_blank"><img id="git" src=".\imgs\git.png" /></a><br />
+
+                Puoi contattarmi via email a <a href="mailto:piersanti.mat@gmail.com">piersanti.mat@gmail.com</a>
+            </p>
+        </section>
+        <p>&copy; 2025 | Il Blog Personale di Matteo per Epicode. Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>
